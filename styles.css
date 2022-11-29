@@ -1,0 +1,326 @@
+body {
+    margin: 0; /*Zodat je de scrollbar niet ziet*/
+}
+.capy {
+    width: 60px;
+    padding-right: 10px;
+    transition: width 0.5s;
+}
+.capy:hover { /*Bij deze is de hover dat je er over heen gaat dat de width groter word*/
+    width: 100px;
+    transition: width 0.5s;
+}
+.flexbox1 {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center; /*alle items in het midden*/
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.flexbox1 h2 {
+    transition: font-size 0.5s;
+}
+.flexbox1:hover h2 {
+    font-size: 40px;
+    transition: font-size 0.5s;
+}
+.flexbox2, .flexbox6 {
+    flex: 1;
+}
+.flexbox3 {
+    flex: 1;
+    padding-right: 100px;
+}
+.nav a {
+    transition: font-size 0.5s;
+}
+.nav a:hover {
+    font-size: 30px;
+    transition: font-size 0.5s;
+}
+.flexbox4 {
+    flex: 1;
+    height: 750px;
+    justify-content: center;
+    padding-top: 250px;
+    display: block;
+    padding-left: 70px;
+}
+.flexbox5 {
+    flex: 1;
+    padding-top: 330px;
+    margin-left: 30px;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: lightsteelblue;
+}
+.nav  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-style: oblique;
+    color: white;
+    padding-top: 30px;
+}
+a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;/*Geen text decoratie dus geen streep deronder bij een link*/
+    font-family:'Courier New', Courier, monospace; /*andere text soort*/
+}
+.name {
+    color: rgb(67, 135, 224);
+    font-size: 50px;
+    transition: font-size 0.5s;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.name:hover {
+    font-size: 60px;
+}
+ul li {
+    color: lightsteelblue;
+    font-size: 20px;
+    font-style: oblique;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    transition: font-size 0.5s;
+}
+ul li:hover {
+    font-size: 25px;
+    transition: font-size 0.5s;
+}
+
+h1, h2 {
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.mee {
+    color: white;
+    background-color: rgb(86, 67, 253);
+    width: 100px;
+    height: 30px;
+    padding-left: 10px;
+    padding-top: 8px;
+    border-radius: 15px;
+    text-shadow: 2px 2px 4px #000000;/*Shadow onder de text*/
+    font-family:'Courier New', Courier, monospace;
+}
+
+.layerone{
+    display: flex;
+    flex-direction: row;
+    background-image: url("images/8088658.gif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.layerone2, .layer, .main {
+    display: flex;
+    flex-direction: row;
+    background-image: url("images/3492868.gif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    padding-bottom: 500px;
+}
+.textaboutme {
+    display: block;
+    color: white;
+    background-color: rgb(86, 67, 253);
+    border-radius: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 500px;
+    padding-bottom: 10px;
+}
+.aboutmee {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.boutme {
+    padding-left: 20px;
+}
+.me {
+    padding-left: 20px;
+    font-style: italic; /*Schijne text*/
+    font-weight: normal; /*normale text*/
+    padding-bottom: 15px;
+    padding-right: 20px;
+}   
+.aboutme2 {
+    color: black;
+    font-size: 20px;
+    font-style: oblique;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    transition: font-size 0.5s;
+}
+.aboutme2:hover { /*Hover is als je er over heen gaat dat het veranders bij deze dan de font size veranderd*/
+    font-size: 25px;
+    transition: font-size 0.5s;
+}
+.foto {
+    width: 600px;
+    padding-left: 100px;
+    padding-top: 30px;
+    transition: width 0.5s;
+
+}
+.foto:hover {
+    width: 800px;
+    transition: width 0.5s;
+}
+.bitmoji {
+    border-radius: 100%;
+    margin-top: 230px;
+    margin-right: 20px;
+    width: 600px;
+    transition: width 0.5s;
+}
+.bitmoji:hover {
+    width: 700px;
+    transition: width 0.5s;
+}
+.twitter, .discord, .insta {
+    width: 32px;
+    height: 32px;
+}
+.flexname {
+    display: flex;
+    padding-top: 100px;
+    width: 400px;
+    height: 900px;
+}
+.flexnamee {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 70px;
+    height: 100px;
+    border-radius: 15px;
+    color: rgb(67, 135, 224);
+}
+.table {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+}
+.container {
+  width: 100%;
+  background-color: rgb(156, 154, 154); 
+  border-radius: 15px;
+  transition: width 0.5s;
+}
+.container:hover{
+    width: 120%;
+    transition: width 0.5s;
+}
+.skills {
+  padding-top: 10px; 
+  padding-bottom: 10px; 
+  color: white; 
+  border-radius: 15px;
+  text-align: center;
+}
+
+.html, .css {
+    width: 40%; 
+    background-color: rgb(67, 135, 224);
+} 
+.Csharp {
+    width: 30%; 
+    background-color: rgb(67, 135, 224);
+} 
+.lua {
+    width: 10%; 
+    background-color: rgb(67, 135, 224);
+} 
+.cool {
+    color: white;
+}
+.rightbox, .leftbox {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.skillss {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
+    height: 100px;
+    border-radius: 15px;
+    color: rgb(67, 135, 224);
+    text-align: center;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+}
+.leftbox2 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.rightbox2 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.middlebox2 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+.projectt {
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
+    border-radius: 15px;
+    color: rgb(67, 135, 224);
+}
+.sharp {
+    padding-top: 20px;
+    padding-left: 230px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
+    color: rgb(67, 135, 224);
+}
+.csharppro {
+    border-radius: 15px;
+    width: 80%;
+    padding-bottom: 3px;
+    padding-left: 20px;
+}
+.html2 {
+    padding-top: 20px;
+    display: flex;
+    padding-left: 230px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70px;
+    color: rgb(67, 135, 224);
+}
+.csharppro2 {
+    border-radius: 15px;
+    width: 80%;
+    padding-bottom: 3px;
+    margin-left: 110px;
+}
