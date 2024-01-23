@@ -1,0 +1,71 @@
+@font-face {
+  font-family: MyFont;
+  src: url(font/LeagueSpartan-Bold.otf);
+}
+body, html{
+  scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'MyFont';
+}
+.streep {
+  color: rgb(109, 43, 233);
+}
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+.jumbotron{
+  height: 100vh;
+  padding-top: 100px;
+  margin: 0;
+  border-radius: 0;
+}
+#about{
+  display: flex;
+  background-image: url(images/BGGH.jpg);
+  background-size: cover;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 40px;
+  align-items: center;
+}
+.naam{
+  font-size: 100px;
+}
+.logos {
+  padding-top: 10px;
+}
+.twitter,.discord,.git,.linkedin {
+  width: 40px;
+  height: 40px;
+}
+.auto-type {
+  text-shadow: 0 0 5px #6656f8, 0 0 15px #7039f1, 0 0 20px #6431f1, 0 0 40px #772dee, 0 0 60px #7020f0, 0 0 10px #4218fa,
+      0 0 98px #3911ee;
+}
+.autotype{
+  font-size: 30px;
+}
+
+.rey-btn {
+  border: 2px solid #070707;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  font-size: 13px;
+  border-radius: 50px;
+}
+/*reveal*/
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
