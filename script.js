@@ -34,3 +34,27 @@ var typed = new Typed('.auto-type', {
       // Toggle de .nav-active class op de navigatie
       navLinks.classList.toggle('nav-active');
   });
+  $(document).ready(function(){
+    $(".nav-tabs a").click(function(){
+      $(this).tab('show');
+    });
+  });
+
+  function sendEmail() {
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+    var subject1 = document.getElementById('subject').value;
+
+    var recipientEmail = 'danielterpstra006@gmail.com';
+
+    var subject = subject1;
+    var mailtoUri = 'mailto:' + encodeURIComponent(recipientEmail);
+    mailtoUri += '?subject=' + encodeURIComponent(subject);
+    mailtoUri += '&body=' + encodeURIComponent(message);
+
+    window.location.href = mailtoUri;
+
+    //mail verturen niet eerst naar mail gaan
+    return false;
+    
+}
