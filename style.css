@@ -39,10 +39,10 @@ body, html{
   color: #7039f1;
 }
 #skills{
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  align-items: center;
   color: #b1adad;
 }
 #projects{
