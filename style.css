@@ -9,9 +9,6 @@ body, html{
   padding: 0;
   font-family: 'MyFont';
 }
-.streep {
-  color: rgb(109, 43, 233);
-}
 .navbar {
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
@@ -38,7 +35,7 @@ body, html{
   font-size: 40px;
   align-items: center;
 }
-#aboutme{
+#aboutme, .rush, .streep{
   color: #7039f1;
 }
 #skills{
@@ -46,9 +43,9 @@ body, html{
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #b1adad;
 }
 #projects{
-  height: 100vh;
   color: white;
 }
 #contact{
@@ -69,8 +66,7 @@ body, html{
   font-size: 50px;
 }
 .logos {
-  letter-spacing: 10px;
-
+  letter-spacing: 5px;
 }
 .twitter,.discord,.git,.linkedin {
   width: 40px;

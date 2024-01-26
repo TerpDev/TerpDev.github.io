@@ -22,16 +22,9 @@ var typed = new Typed('.auto-type', {
   }
   
   window.addEventListener("scroll", reveal);
-  
-  // main.js
-  
-  // Selecteer de navigatie en het hamburger menu
   const navLinks = document.querySelector('.nav-links');
   const hamburgerMenu = document.querySelector('.hamburger-menu');
-  
-  // Voeg een click event listener toe aan het hamburger menu
   hamburgerMenu.addEventListener('click', () => {
-      // Toggle de .nav-active class op de navigatie
       navLinks.classList.toggle('nav-active');
   });
   $(document).ready(function(){
@@ -53,8 +46,4 @@ var typed = new Typed('.auto-type', {
     mailtoUri += '&body=' + encodeURIComponent(message);
 
     window.location.href = mailtoUri;
-
-    //mail verturen niet eerst naar mail gaan
-    return false;
-    
 }
