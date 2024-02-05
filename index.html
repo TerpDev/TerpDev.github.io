@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Model Container</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Model Container</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 </head>
+
 <body>
-    <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <div style="width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center;">
-                <model-viewer style="width: 100%; height: 100%;"
-                ar-placement="wall"
-                    src="shared-assets/models/NeilArmstrong.glb"
-                    ar
-                    shadow-intensity="1" camera-controls
-                    touch-action="pan-y"></model-viewer>
-            </div>
-          </div>
-          <div class="col-sm">
-            <div style="width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center;">
-              <model-viewer style="width: 100%; height: 100%;"
-                  src="shared-assets/models/boom_2_.glb"
-                  ar ar-placement="wall" camera-controls touch-action="pan-y" alt="A 3D model of some wall art"></model-viewer>
-          </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+        <div style="width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center;">
+          <model-viewer style="width: 100%; height: 100%;" src="shared-assets/models/NeilArmstrong.glb" ar
+            shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
         </div>
-          </div>
-          <div class="col-sm">
-            One of three columns
+      </div>
+      <div class="col-sm">
+        <div style="width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center;">
+          <model-viewer id="modelviewer1"style="width: 100%; height: 100%;" src="shared-assets/models/boom_2_.glb" ar ar-placement="wall"
+            shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+        </div>
+      </div>
+      <div class="col-sm">
+        <div class="col-sm">
+          <div style="width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center;">
+            <!--Input where you can put in a glb file or png everything and display that-->
+
+            <input type="file" id="file" accept=".glb, .gltf, .png, .jpg, .jpeg, .webp" />
+            
+
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <script>
+    //when the file is uploaded, the model-viewer will display the file that was uploaded in id modelviewer1
+    document.getElementById('file').addEventListener('change', function (event) {
+      const file = event.target.files[0]; // get the file
+      const modelViewer = document.getElementById('modelviewer1'); 
+      modelViewer.src = URL.createObjectURL(file); // set the src of the model-viewer to the file
+    });
+    
+
+  </script>
 </body>
+
 </html>
