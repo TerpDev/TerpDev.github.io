@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
+::-webkit-scrollbar {
+    display: none;
+}
+html{
+    @apply scroll-smooth;
+}
+.p-image-preview{
+    @apply p-32;
+}
+.p-image-action{
+    @apply text-white;
+}
+.p-image-preview-container > img{
+    @apply rounded-lg;
+}
+
